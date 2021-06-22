@@ -1,0 +1,42 @@
+.page-container {
+  height: 100vh;
+}
+
+.doppler-logo {
+  width: 200px;
+}
+
+.logo {
+  max-height: 150px;
+}
+
+header,
+main,
+footer {
+  width: 100%;
+}
+
+video {
+  position: relative;
+  z-index: 1000;
+  max-height: 400px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (min-height: 768px) {
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}

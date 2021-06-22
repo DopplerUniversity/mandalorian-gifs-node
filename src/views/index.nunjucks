@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="author" content="Ryan Blunden"/>
+    <meta name="description" content="Mandalorian GIF Generator"/>
+    <title>Doppler Mandalorian GIF Generator</title>
+    <meta name="theme-color" content="#7952b3"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+    <link href="/styles/global.css" rel="stylesheet"/>
+    <meta property="og:image" content="/images/og-image.jpg"/>
+    <meta name="og:title" content="Doppler Mandalorian GIF Generator"/>
+    <meta name="twitter:card" content="/images/og-image.jpg"/>
+    <link rel="shortcut icon" href="/images/doppler-fav-icon-logo.png"/>
+    <link rel="icon" type="image/png" href="/images/doppler-fav-icon-logo.png"/>
+  </head>
+  <body>
+    <div class="page-container text-center text-white bg-dark">
+      <header>
+        <div class="container pb-2">
+          <div class="row justify-content-center">
+            <div class="col text-center">
+              <a href="https://doppler.com" target="_blank" class="d-block pt-5">
+                <img src="/images/doppler-logo.png" class="doppler-logo mw-100"/>
+              </a>
+              <img src="/images/mandalorion-logo.png" class="d-block mx-auto mt-4 logo images images-fluid mw-100"/>
+              <h1 class="mt-2 mb-0 text-uppercase h5">
+                <span class="sr-only">Mandalorian</span>GIF Generator</h1>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col">
+              <video
+                class="mt-5 shadow-lg rounded position-relative mw-100"
+                muted
+                autoplay
+                loop
+              >
+                <source src="{{gif.mp4}}" type="video/mp4"/>
+              </video>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p class="small mt-5">
+          Powered by
+          <a href="https://giphy.com/search/mandalorian" class="text-white" target="_blank"> GIPHY </a>
+          and the
+          <a href="https://doppler.com/" class="text-white" target="_blank"> Doppler Universal Secrets Manager </a>
+        </p>
+        <p class="small mt-1 mb-0">
+          Mandalorian logo by
+          <a
+            href="https://www.deviantart.com/kiofficialart/art/Star-Wars-Mandalorian-logo-title-Fanmade-795171000"
+            class="text-white"
+            target="_blank"
+          >
+            KIOfficialArt
+          </a>
+        </p>
+        <p class="mt-2 pb-5">
+          <a href="https://github.com/DopplerHQ/mandalorion-gifs" class="small text-white nav-link" target="_blank">
+            <span class="px-1">View on GitHub</span>
+            <img src="/images/github-logo.png"/>
+          </a>
+        </p>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>

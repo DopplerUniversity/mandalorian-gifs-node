@@ -1,0 +1,44 @@
+{
+  "name": "mandalorion-gifs",
+  "repository": {
+    "url": "github:DopplerHQ/mandalorion-gifs-node"
+  },
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=14.x"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/server",
+    "local": "nodemon ./src/server",
+    "lint": "eslint --fix ./",
+    "prettier": "prettier --write --loglevel error ./src",
+    "dev-setup": "npm install --only dev --silent --no-audit",
+    "ngrok-install": "wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && unzip ngrok*.zip && mv ngrok ./node_modules/.bin/ && rm ngrok*.zip",
+    "ngrok-auth": "echo -n 'ngrok authtoken: ' && read -s authtoken && ngrok authtoken $authtoken",
+    "ngrok-tunnel": "ngrok http --region=us --hostname=vscode-devcontainer.ngrok.io --bind-tls true 8080",
+    "ngrok-setup": "npm run ngrok-install && npm run ngrok-auth && npm run ngrok-tunnel"
+  },
+  "nodemonConfig": {
+    "ext": "*.js,*.css,*.nunjucks",
+    "events": {
+      "restart": "npm run lint && npm run prettier"
+    }
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "debug": "^4.3.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "nunjucks": "^3.2.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.28.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.23.4",
+    "ncp": "^2.0.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.1"
+  }
+}

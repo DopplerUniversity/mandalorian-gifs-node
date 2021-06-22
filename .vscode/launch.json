@@ -1,0 +1,35 @@
+// See https://go.microsoft.com/fwlink/?linkid=830387 for spec
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "doppler",
+      "type": "pwa-node",
+      "request": "launch",
+      "runtimeExecutable": "doppler",
+      "runtimeArgs": [
+        "run",
+        "--",
+        "npm",
+        "run",
+        "local"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+    },
+    {
+      "name": "node",
+      "type": "pwa-node",
+      "request": "launch",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": [
+        "run",
+        "local"
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    }
+  ],
+}
