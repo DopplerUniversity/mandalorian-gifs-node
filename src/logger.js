@@ -1,9 +1,15 @@
+// Set default for debug library
 import debug from 'debug'
 
-const table = obj => {
+debug.enable(process.env.DEBUG || 'app: error:')
+
+const table = (obj, displayEmpty = false) => {
   const rows = []
   Object.keys(obj).forEach(key => {
     let value = obj[key] ? obj[key] : ''
+    if (value === '' && !displayEmpty) {
+      return
+    }
     if (key.match(/KEY|TOKEN|SECRET|CERT/)) {
       value = value.length > 0 ? '*'.repeat(12) : ''
     }

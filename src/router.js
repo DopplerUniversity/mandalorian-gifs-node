@@ -1,6 +1,5 @@
 import express from 'express'
 import { Config } from './config.js'
-import log from './logger.js'
 import giphy from './giphy.js'
 
 const router = express.Router()
@@ -12,18 +11,17 @@ router.get('/', async (req, res) => {
   })
 })
 
-router.get('/healthz', (req, res) => {
-  const HEALTH_RESPONSES = [
-    'I can bring you in warm, or I can bring you in cold.',
-    'I like those odds.',
-    'I’m a Mandalorian. Weapons are part of my religion.',
-    'Stop touching things.',
-    'Bad news. You can’t live here anymore.',
-    'She’s no good to us dead.',
-    'Wherever I go, he goes.',
-  ]
-  const response = HEALTH_RESPONSES[Math.floor(Math.random() * HEALTH_RESPONSES.length)]
-  log.server('healthcheck: %s', response)
+const HEALTH_RESPONSES = [
+  'I can bring you in warm, or I can bring you in cold.',
+  'I like those odds.',
+  'I’m a Mandalorian. Weapons are part of my religion.',
+  'Stop touching things.',
+  'Bad news. You can’t live here anymore.',
+  'She’s no good to us dead.',
+  'Wherever I go, he goes.',
+]
+
+router.get('/healthz', (_, res) => {
   res.send(HEALTH_RESPONSES[Math.floor(Math.random() * HEALTH_RESPONSES.length)])
 })
 

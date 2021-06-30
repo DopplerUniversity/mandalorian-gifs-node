@@ -34,7 +34,7 @@ video {
   border: 0;
 }
 
-@media (min-height: 768px) {
+@media (min-height: 1020px) {
   footer {
     position: absolute;
     bottom: 0;
