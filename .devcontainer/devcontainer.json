@@ -27,7 +27,7 @@
 
   // 2. Remote host mount (recommended) to get started.
   // See https://code.visualstudio.com/docs/remote/containers#_sharing-git-credentials-with-your-container for other options
-  "workspaceMount": "source=/home/ubuntu/mandalorion-gifs-node,target=/usr/src/app,type=bind,consistency=delegated",
+  // "workspaceMount": "source=/home/ubuntu/mandalorion-gifs-node,target=/usr/src/app,type=bind,consistency=delegated",
 
   // 3. Local host mount (local Docker only)
   // "workspaceMount": "source=${localWorkspaceFolder},target=/usr/src/app,type=bind,consistency=delegated",
