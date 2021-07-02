@@ -21,7 +21,3 @@ chmod +x /usr/local/bin/docker-compose
 groupadd docker
 usermod -aG docker ubuntu
 newgrp docker
-
-docker image pull wernight/funbox
-docker image pull node:lts-alpine
-docker image pull dopplerhq/mandalorion-gifs-node
