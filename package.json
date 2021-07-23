@@ -1,5 +1,7 @@
 {
   "name": "mandalorion-gifs",
+  "description": "Display random Mandalorion GIFs",
+  "license": "Apache-2.0",
   "repository": {
     "url": "github:DopplerHQ/mandalorion-gifs-node"
   },
