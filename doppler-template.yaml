@@ -1,0 +1,45 @@
+projects:
+  - name: 'mandalorion-gifs'
+    description: 'Mandalorion GIFS generator'
+    environments:
+      - slug: 'dev'
+        name: 'Development'
+        configs:
+          - slug: 'dev'
+      - slug: 'stg'
+        name: 'Staging'
+        configs:
+          - slug: 'stg'
+      - slug: 'prd'
+        name: 'Production'
+        configs:
+          - slug: 'prd'
+    secrets:
+      dev:
+        NODE_ENV: 'development'
+        DEBUG_COLORS: 'yes'
+        DEBUG: 'app: server: error:'
+        LOGGING: 'dev'
+        HOST: 'localhost'
+        PORT: '8080'
+        GIPHY_API_KEY: ''
+        GIPHY_TAG: 'mandalorion'
+        GIPHY_RATING: 'pg13'
+      stg:
+        NODE_ENV: 'development'
+        DEBUG: 'app: server: error:'
+        LOGGING: 'dev'
+        HOST: '0.0.0.0'
+        PORT: '8080'
+        GIPHY_API_KEY: ''
+        GIPHY_TAG: 'mandalorion'
+        GIPHY_RATING: 'pg13'
+      prd:
+        NODE_ENV: 'production'
+        DEBUG: 'app: server: error:'
+        LOGGING: 'common'
+        HOST: '0.0.0.0'
+        PORT: '8080'
+        GIPHY_API_KEY: ''
+        GIPHY_TAG: 'mandalorion'
+        GIPHY_RATING: 'pg13'
