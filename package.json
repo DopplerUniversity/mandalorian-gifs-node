@@ -3,7 +3,7 @@
   "description": "Display random Mandalorion GIFs",
   "license": "Apache-2.0",
   "repository": {
-    "url": "github:DopplerHQ/mandalorion-gifs-node"
+    "url": "github:DopplerUniversity/mandalorion-gifs-node"
   },
   "version": "1.0.0",
   "engines": {

@@ -67,7 +67,7 @@
           </a>
         </p>
         <p class="mt-2 pb-5">
-          <a href="https://github.com/DopplerHQ/mandalorion-gifs" class="small text-white nav-link" target="_blank">
+          <a href="https://github.com/DopplerUniversity/mandalorion-gifs-node" class="small text-white nav-link" target="_blank">
             <span class="px-1">View on GitHub</span>
             <img src="/images/github-logo.png"/>
           </a>
