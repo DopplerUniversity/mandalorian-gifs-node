@@ -1,17 +1,21 @@
 projects:
-  - name: 'mandalorion-gifs'
+  - name: 'mandalorion-gifs-node'
     description: 'Mandalorion GIFS generator'
     environments:
-      - slug: 'dev'
-        name: 'Development'
+      - name: 'Development'
+        slug: 'dev'
         configs:
           - slug: 'dev'
-      - slug: 'stg'
-        name: 'Staging'
+      - name: 'CI-CD'
+        slug: 'ci-cd'
+        configs:
+          - slug: 'ci-cd'
+      - name: 'Staging'
+        slug: 'stg'
         configs:
           - slug: 'stg'
-      - slug: 'prd'
-        name: 'Production'
+      - name: 'Production'
+        slug: 'prd'
         configs:
           - slug: 'prd'
     secrets:
@@ -25,6 +29,9 @@ projects:
         GIPHY_API_KEY: ''
         GIPHY_TAG: 'mandalorion'
         GIPHY_RATING: 'pg13'
+      ci-cd:
+        DOCKER_HUB_USERNAME: ''
+        DOCKER_HUB_TOKEN: ''
       stg:
         NODE_ENV: 'development'
         DEBUG: 'app: server: error:'
