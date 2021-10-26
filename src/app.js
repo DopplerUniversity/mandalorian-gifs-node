@@ -2,7 +2,7 @@ import path from 'path'
 import express from 'express'
 import logger from 'morgan'
 import nunjucks from 'nunjucks'
-import { Config } from './config.js'
+import Config from './config.js'
 import log from './logger.js'
 import router from './router.js'
 
@@ -20,7 +20,6 @@ app.use(router)
 app.use(express.static(path.join(dirname, 'public')))
 app.use(logger(Config.LOGGING))
 
-log.app(`Configured by ${Config.CONFIG_SOURCE}`)
 if (process.env.NODE_ENV === 'development') {
   log.table(Config)
 }

@@ -36,7 +36,7 @@
     "comma-dangle": [
       "error",
       {
-        "arrays": "always",
+        "arrays": "ignore",
         "objects": "ignore",
         "functions": "never"
       }

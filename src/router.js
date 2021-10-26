@@ -1,5 +1,5 @@
 import express from 'express'
-import { Config } from './config.js'
+import Config from './config.js'
 import giphy from './giphy.js'
 
 const router = express.Router()

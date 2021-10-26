@@ -1,37 +1,28 @@
-import fs from 'fs'
-import dotenv from 'dotenv'
+const CONFIG_VARS = [
+  'DEBUG',
+  'DEBUG_COLORS',
+  'GIPHY_API_KEY',
+  'GIPHY_RATING',
+  'GIPHY_TAG',
+  'HOSTNAME',
+  'LOGGING',
+  'NODE_ENV',
+  'PORT',
+]
 
-const configError = envVar => {
-  console.error(`[error]: Required environment variable ${envVar} is not set or invalid. Aborting.\n`)
-  process.exit(1)
-}
-
-const CONFIG_SOURCE = (() => {
-  if (fs.existsSync('.env')) {
-    dotenv.config()
-    return '.env file'
-  }
-
-  if (process.env.DOPPLER_PROJECT) {
-    return `Doppler (${process.env.DOPPLER_PROJECT} => ${process.env.DOPPLER_CONFIG})`
-  }
-  return 'System environment variables'
-})()
+const ENV_KEEP = ['NODE_ENV', 'DEBUG', 'DEBUG_COLORS']
 
 class AppConfig {
-  constructor(env) {
-    this.GIPHY_API_KEY = env.GIPHY_API_KEY
-    this.GIPHY_TAG = env.GIPHY_TAG || configError('GIPHY_TAG')
-    this.GIPHY_RATING = env.GIPHY_RATING || configError('GIPHY_RATING')
+  constructor() {
+    CONFIG_VARS.forEach(key => {
+      this[key] = process.env[key]
 
-    this.NODE_ENV = env.NODE_ENV || 'production'
-    this.CONFIG_SOURCE = CONFIG_SOURCE
-    this.LOGGING = env.LOGGING || configError('LOGGING')
-
-    this.HOSTNAME = env.HOSTNAME || configError('HOSTNAME')
-    this.PORT = env.PORT || configError('PORT')
+      if (!ENV_KEEP.includes(key)) {
+        delete process.env[key]
+      }
+    })
   }
 }
 
-const Config = new AppConfig(process.env)
-export { AppConfig, Config }
+const CONFIG = new AppConfig()
+export default CONFIG

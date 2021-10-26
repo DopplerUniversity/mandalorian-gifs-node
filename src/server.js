@@ -1,5 +1,5 @@
 import http from 'http'
-import { Config } from './config.js'
+import Config from './config.js'
 import log from './logger.js'
 import app from './app.js'
 
