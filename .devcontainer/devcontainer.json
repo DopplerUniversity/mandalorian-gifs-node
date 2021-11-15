@@ -11,7 +11,7 @@
   // Required for installing dev packages. Avoid if possible.
   // "containerUser": "root",
 
-  "postCreateCommand": "npm run dev-setup",
+  "postCreateCommand": "npm install --only dev --silent --no-audit",
 
   "forwardPorts": [
     8080

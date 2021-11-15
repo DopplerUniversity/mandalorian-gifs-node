@@ -1,0 +1,12 @@
+# image:
+#   file: .gitpod.Dockerfile
+
+tasks:
+  - name: Install dependencies
+    init: npm install --only dev --silent --no-audit
+  - name: Install Doppler CLI
+    command: brew install dopplerhq/cli/doppler
+
+ports:
+  - port: 8080
+    onOpen: open-browser
