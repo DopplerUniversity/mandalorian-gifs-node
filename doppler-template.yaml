@@ -1,6 +1,6 @@
 projects:
-  - name: 'mandalorion-gifs-node'
-    description: 'Mandalorion GIFS generator'
+  - name: 'mandalorian-gifs-node'
+    description: 'Mandalorian GIFS generator'
     environments:
       - name: 'Development'
         slug: 'dev'
@@ -27,7 +27,7 @@ projects:
         HOSTNAME: 'localhost'
         PORT: '8080'
         GIPHY_API_KEY: ''
-        GIPHY_TAG: 'mandalorion'
+        GIPHY_TAG: 'mandalorian'
         GIPHY_RATING: 'pg13'
       ci-cd:
         DOCKER_HUB_USERNAME: ''
@@ -39,7 +39,7 @@ projects:
         HOSTNAME: '0.0.0.0'
         PORT: '8080'
         GIPHY_API_KEY: ''
-        GIPHY_TAG: 'mandalorion'
+        GIPHY_TAG: 'mandalorian'
         GIPHY_RATING: 'pg13'
       prd:
         NODE_ENV: 'production'
@@ -48,5 +48,5 @@ projects:
         HOSTNAME: '0.0.0.0'
         PORT: '8080'
         GIPHY_API_KEY: ''
-        GIPHY_TAG: 'mandalorion'
+        GIPHY_TAG: 'mandalorian'
         GIPHY_RATING: 'pg13'

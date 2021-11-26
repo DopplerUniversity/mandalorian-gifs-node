@@ -1,12 +1,12 @@
 // See https://aka.ms/devcontainer.json for spec
 {
-  "name": "Mandalorion GIFs",
+  "name": "Mandalorian GIFs",
 
   // Choose to either reference an existing image or build from scratch
   "build": {
     "dockerfile": "../Dockerfile"
   },
-  // "image": "dopplerhq/mandalorion-gifs-node",
+  // "image": "dopplerhq/mandalorian-gifs-node",
 
   // Required for installing dev packages. Avoid if possible.
   // "containerUser": "root",
@@ -27,14 +27,14 @@
 
   // 2. Remote host mount (recommended) to get started.
   // See https://code.visualstudio.com/docs/remote/containers#_sharing-git-credentials-with-your-container for other options
-  // "workspaceMount": "source=/home/ubuntu/mandalorion-gifs-node,target=/usr/src/app,type=bind,consistency=delegated",
+  // "workspaceMount": "source=/home/ubuntu/mandalorian-gifs-node,target=/usr/src/app,type=bind,consistency=delegated",
 
   // 3. Local host mount (local Docker only)
   // "workspaceMount": "source=${localWorkspaceFolder},target=/usr/src/app,type=bind,consistency=delegated",
 
   // Doppler eliminates the need for .env files! To enable, open workspace from the terminal by running `./bin/doppler-vscode.sh`
   "containerEnv": {
-    "DOPPLER_PROJECT": "mandalorion-gifs",
+    "DOPPLER_PROJECT": "mandalorian-gifs",
     "DOPPLER_CONFIG": "dev",
     "DOPPLER_TOKEN": "${localEnv:DOPPLER_TOKEN}", // Don't hard-code this!
   },

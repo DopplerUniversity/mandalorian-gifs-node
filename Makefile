@@ -6,19 +6,19 @@ SHELL=/bin/bash
 
 # USAGE: doppler-project-create GIPHY_API_KEY=XXXX
 doppler-project-create:
-	@echo '[info]: Creating mandalorion-gifs Doppler project'
+	@echo '[info]: Creating mandalorian-gifs Doppler project'
 	@./bin/create-doppler-project.sh $(GIPHY_API_KEY)
 
 doppler-project-delete:
 	@echo '[info]: Deleting mandalorin-gifs project'
-	doppler projects delete mandalorion-gifs --yes --silent
+	doppler projects delete mandalorian-gifs --yes --silent
 
 
 ############
 #  DOCKER  #
 ############
 
-CONTAINER_NAME=mandalorion-gifs
+CONTAINER_NAME=mandalorian-gifs
 IMAGE_NAME=dopplerhq/$(CONTAINER_NAME)
 
 docker-build:

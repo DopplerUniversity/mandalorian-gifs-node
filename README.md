@@ -1,16 +1,16 @@
-# Mandalorion GIF Generator
+# Mandalorian GIF Generator
 
-![Mandalorion GIFs screenshot](https://repository-images.githubusercontent.com/379081767/a7410806-d70e-43b5-965d-2d954ced4269)
+![Mandalorian GIFs screenshot](https://repository-images.githubusercontent.com/379081767/a7410806-d70e-43b5-965d-2d954ced4269)
 
-Random Mandalorion GIFs generator using [Doppler](https://www.doppler.com) for managing app configuration and secrets via environment variables.
+Random Mandalorian GIFs generator using [Doppler](https://www.doppler.com) for managing app configuration and secrets via environment variables.
 
-<a href="https://dashboard.doppler.com/workplace/template/import?template=https%3A%2F%2Fgithub.com%2FDopplerUniversity%2Fmandalorion-gifs-node%2Fblob%2Fmain%2Fdoppler-template.yaml"/><img src="https://raw.githubusercontent.com/DopplerUniversity/app-config-templates/main/doppler-button.svg" alt="Import to Doppler" /></a>
+<a href="https://dashboard.doppler.com/workplace/template/import?template=https%3A%2F%2Fgithub.com%2FDopplerUniversity%2Fmandalorian-gifs-node%2Fblob%2Fmain%2Fdoppler-template.yaml"/><img src="https://raw.githubusercontent.com/DopplerUniversity/app-config-templates/main/doppler-button.svg" alt="Import to Doppler" /></a>
 
 ## Run using Gitpod
 
 To create an Gitpod development environment, first create the workspace:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DopplerUniversity/mandalorion-gifs-node)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/DopplerUniversity/mandalorian-gifs-node)
 
 Then create a [Service Token](https://docs.doppler.com/docs/enclave-service-tokens) for the **dev** config and copy the token value and configure the Gitpod workspace by running:
 

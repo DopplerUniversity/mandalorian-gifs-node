@@ -9,4 +9,4 @@ docker container run --rm -it \
   -e DOPPLER_PROJECT="$DOPPLER_PROJECT" \
   -e DOPPLER_CONFIG="$DOPPLER_CONFIG" \
   -p 8080:8080 \
-  dopplerhq/mandalorion-gifs $1
+  dopplerhq/mandalorian-gifs $1

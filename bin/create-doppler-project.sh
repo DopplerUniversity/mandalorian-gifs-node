@@ -8,9 +8,9 @@ random_id() {
   docker run --rm alpine/openssl rand -base64 32
 }
 
-echo '[info]: Creating "mandalorion-gifs" project'
-doppler projects create mandalorion-gifs --silent
-doppler setup --no-prompt --silent
+echo '[info]: Creating "mandalorian-gifs" project'
+doppler projects create mandalorian-gifs --silent
+doppler setup --no-interactive --silent
 
 echo '[info]: Setting initial configuration using sample.env'
 doppler secrets upload --silent --config dev sample.env
@@ -31,7 +31,7 @@ doppler secrets set --silent GIPHY_API_KEY="$1"
 doppler secrets set --silent --config prd GIPHY_API_KEY="$1"
 
 echo '[info]: Setting default local Doppler config to "dev"'
-doppler setup --no-prompt --silent
+doppler setup --no-interactive --silent
 
 echo '[info]: Opening the Doppler dashboard'
 doppler open dashboard
