@@ -1,21 +1,21 @@
 {
   "name": "mandalorian-gifs",
-  "description": "Display random Mandalorian GIFs",
+  "description": "Mandalorian GIFs",
   "license": "Apache-2.0",
   "repository": {
     "url": "github:DopplerUniversity/mandalorian-gifs-node"
   },
   "version": "1.0.0",
   "engines": {
-    "node": ">=14.x"
+    "node": ">=16.x"
   },
   "type": "module",
   "scripts": {
     "start": "node ./src/server",
-    "doppler": "doppler run -- npm start",
     "local": "doppler run -- nodemon -- ./src/server",
     "lint": "eslint --fix ./",
     "prettier": "prettier --write --loglevel error ./src",
+    "test": "eslint ./ && prettier --check --loglevel error ./src",
     "gitpod": "doppler run --token $(gp env | grep DOPPLER_TOKEN | cut -d '=' -f 2) -- npm start",
     "gitpod-config": "./bin/gitpod-config.sh",
     "ngrok-install": "wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip && unzip ngrok*.zip && mv ngrok ./node_modules/.bin/ && rm ngrok*.zip",

@@ -1,0 +1,65 @@
+{
+  "name": "Mandalorian GIFs",
+  "description": "Mandalorian GIFs using Doppler app configuration and secrets via environment variables.",
+  "website": "https://doppler.com/",
+  "repository": "https://github.com/DopplerUniversity/mandalorian-gifs-node",
+  "logo": "https://dashboard.doppler.com/imgs/logo_color.png",
+  "success_url": "/",
+  "env": {
+    "DEBUG": {
+      "value": "app: server: error:"
+    },
+    "GIPHY_RATING": {
+      "value": "pg13"
+    },
+    "GIPHY_TAG": {
+      "value": "mandalorian"
+    },
+		"GIPHY_API_KEY": {
+      "value": "testing"
+    },
+    "HOSTNAME": {
+      "value": "0.0.0.0"
+    },
+    "LOGGING": {
+      "value": "common"
+    },
+    "NODE_ENV": "production"
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "environments": {
+    "review": {
+      "env": {
+        "DEBUG": {
+          "value": "app: server: error:"
+        },
+        "GIPHY_RATING": {
+          "value": "pg13"
+        },
+        "GIPHY_TAG": {
+          "value": "mandalorian"
+        },
+				"GIPHY_API_KEY": {
+					"value": "testing"
+				},
+        "HOSTNAME": {
+          "value": "0.0.0.0"
+        },
+        "LOGGING": {
+          "value": "common"
+        },
+        "NODE_ENV": "production"
+      }
+    },
+		"test": {
+      "scripts": {
+        "test-setup": "npm clean-install --silent --no-audit",
+        "test": "npm run test"
+      }
+    }
+  }
+}

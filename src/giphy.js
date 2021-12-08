@@ -45,6 +45,10 @@ async function getRandomGIF(apiKey, tag, rating) {
     log.app('GIPHY API key not set. Serving random cached response.')
     return cache.getRandom()
   }
+  if (apiKey === 'testing') {
+    log.app('GIPHY API testing key used. Serving random cached response.')
+    return cache.getRandom()
+  }
   try {
     const response = await axios.get(
       `https://api.giphy.com/v1/gifs/random?api_key=${apiKey}&tag=${tag}&rating=${rating}`

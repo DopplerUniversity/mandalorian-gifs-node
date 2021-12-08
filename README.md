@@ -4,7 +4,9 @@
 
 Random Mandalorian GIFs generator using [Doppler](https://www.doppler.com) for managing app configuration and secrets via environment variables.
 
-<a href="https://dashboard.doppler.com/workplace/template/import?template=https%3A%2F%2Fgithub.com%2FDopplerUniversity%2Fmandalorian-gifs-node%2Fblob%2Fmain%2Fdoppler-template.yaml"/><img src="https://raw.githubusercontent.com/DopplerUniversity/app-config-templates/main/doppler-button.svg" alt="Import to Doppler" /></a>
+[![Deploy](https://raw.githubusercontent.com/DopplerUniversity/app-config-templates/main/doppler-button.svg)](https://dashboard.doppler.com/workplace/template/import?template=https://github.com/DopplerUniversity/mandalorian-gifs-node/blob/main/doppler-template.yaml)
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DopplerUniversity/mandalorian-gifs-node/tree/main)
 
 ## Run using Gitpod
 

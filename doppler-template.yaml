@@ -1,15 +1,12 @@
 projects:
   - name: 'mandalorian-gifs-node'
-    description: 'Mandalorian GIFS generator'
+    description: 'Mandalorian GIFs'
     environments:
       - name: 'Development'
         slug: 'dev'
         configs:
           - slug: 'dev'
-      - name: 'CI-CD'
-        slug: 'ci-cd'
-        configs:
-          - slug: 'ci-cd'
+          - slug: 'dev_docker'
       - name: 'Staging'
         slug: 'stg'
         configs:
@@ -29,15 +26,13 @@ projects:
         GIPHY_API_KEY: ''
         GIPHY_TAG: 'mandalorian'
         GIPHY_RATING: 'pg13'
-      ci-cd:
-        DOCKER_HUB_USERNAME: ''
-        DOCKER_HUB_TOKEN: ''
+      dev_docker:
+        HOSTNAME: '0.0.0.0'
       stg:
-        NODE_ENV: 'development'
+        NODE_ENV: 'production'
         DEBUG: 'app: server: error:'
         LOGGING: 'dev'
         HOSTNAME: '0.0.0.0'
-        PORT: '8080'
         GIPHY_API_KEY: ''
         GIPHY_TAG: 'mandalorian'
         GIPHY_RATING: 'pg13'
@@ -46,7 +41,6 @@ projects:
         DEBUG: 'app: server: error:'
         LOGGING: 'common'
         HOSTNAME: '0.0.0.0'
-        PORT: '8080'
         GIPHY_API_KEY: ''
         GIPHY_TAG: 'mandalorian'
         GIPHY_RATING: 'pg13'
