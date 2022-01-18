@@ -8,6 +8,15 @@ Random Mandalorian GIFs generator using [Doppler](https://www.doppler.com) for m
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/DopplerUniversity/mandalorian-gifs-node/tree/main)
 
+## Running the application
+
+Here are the most common and secure methods secrets for injecting secrets into Node.js applications using Doppler:
+
+1. `npm start`: Used when secrets are injected as environment variables by the platform (e.g. [Vercel](https://vercel.com/docs/concepts/projects/environment-variables)) with secrets synced by a [Doppler integration](https://docs.doppler.com/docs/integrations)
+2. `npm run env-vars`: Uses the Doppler CLI to inject secrets into the application process
+3. `mount-dotenv`: Mounts an ephemeral `.env` file allowing only a single read before being destroyed
+4. `nodemon-dotenv`: Mounts an ephemeral `.env` file without read limits to support nodemon reloads.
+
 ## Run using Gitpod
 
 To create an Gitpod development environment, first create the workspace:
