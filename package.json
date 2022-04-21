@@ -12,7 +12,7 @@
   "type": "module",
   "scripts": {
     "start": "node ./src/server",
-    "env-vars": "doppler run -- node ./src/server",
+    "doppler-run": "doppler run -- npm start",
     "mount-dotenv": "doppler run --mount .env --mount-max-reads 1 -- node src/server.js",
     "nodemon-dotenv": "doppler run --mount .env -- node src/server.js",
     "lint": "eslint --fix ./",
