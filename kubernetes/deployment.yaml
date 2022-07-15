@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mandalorian-gifs
+  annotations:
+    secrets.doppler.com/reload: 'true'
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mandalorian-gifs
+  template:
+    metadata:
+      labels:
+        app: mandalorian-gifs
+    spec:
+      containers:
+        - name: mandalorian-gifs
+          image: dopplerhq/mandalorian-gifs-node
+          imagePullPolicy: IfNotPresent
+          envFrom:
+            - secretRef:
+                name: mandalorian-gifs-prd
+          resources:
+            requests:
+              memory: '250Mi'
+              cpu: '250m'
+            limits:
+              memory: '500Mi'
+              cpu: '500m'

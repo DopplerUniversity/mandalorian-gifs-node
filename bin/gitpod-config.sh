@@ -2,6 +2,10 @@
 
 set -e
 
+if [ "$DOPPLER_TOKEN" ]; then
+    exit
+fi
+
 echo '[info]: Please provide a Doppler Service Token - see https://docs.doppler.com/docs/enclave-service-tokens'
 echo -en '\nDOPPLER_TOKEN: ' && read -rs DOPPLER_TOKEN && echo ''
 

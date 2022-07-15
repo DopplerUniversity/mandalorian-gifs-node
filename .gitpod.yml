@@ -6,6 +6,8 @@ tasks:
     init: npm install --only dev --silent --no-audit
   - name: Install Doppler CLI
     command: brew install dopplerhq/cli/doppler
+  - name: Configure Service Token
+    command: npm run gitpod-config
 
 ports:
   - port: 8080
