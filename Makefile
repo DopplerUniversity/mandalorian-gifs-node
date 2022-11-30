@@ -31,7 +31,7 @@ docker-run:
 	-it \
 	--rm \
 	--name $(CONTAINER_NAME) \
-	--env-file <(doppler secrets download --config dev_docker --no-file --format docker) \
+	--env-file <(doppler secrets download --no-file --format docker) \
 	-v $(shell pwd):/usr/src/app:delegated \
 	-p 8080:8080 \
 	$(IMAGE_NAME)

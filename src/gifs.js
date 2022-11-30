@@ -18,24 +18,6 @@ const gifs = [
     height: '270',
   },
   {
-    id: 'fwzAgF14DWsn15Cx1O',
-    url: 'https://giphy.com/gifs/nerdist-star-wars-mandalorian-the-fwzAgF14DWsn15Cx1O',
-    title: 'Star Wars Disney GIF by Nerdist.com',
-    rating: 'g',
-    mp4: 'https://media3.giphy.com/media/fwzAgF14DWsn15Cx1O/giphy.mp4?cid=16254b2532bc18870ffdda366ec9570919253d5d5b946e8e&rid=giphy.mp4&ct=g',
-    width: '480',
-    height: '196',
-  },
-  {
-    id: 'cjhJupyPxNd5XgqFU0',
-    url: 'https://giphy.com/gifs/nerdist-star-wars-mandalorian-the-cjhJupyPxNd5XgqFU0',
-    title: 'Star Wars Disney GIF by Nerdist.com',
-    rating: 'g',
-    mp4: 'https://media4.giphy.com/media/cjhJupyPxNd5XgqFU0/giphy.mp4?cid=16254b25795c6b2ccdc8dda64efc043c7c7221f9781cf846&rid=giphy.mp4&ct=g',
-    width: '480',
-    height: '196',
-  },
-  {
     id: 'Ld77zD3fF3Run8olIt',
     url: 'https://giphy.com/gifs/disneyplus-star-wars-the-mandalorian-madalorian-Ld77zD3fF3Run8olIt',
     title: 'Star Wars Reaction GIF by Disney+',
@@ -144,15 +126,6 @@ const gifs = [
     height: '198',
   },
   {
-    id: 'cqaiJYG5cbLkjTdNe5',
-    url: 'https://giphy.com/gifs/nerdist-star-wars-the-mandalorian-disney-plus-cqaiJYG5cbLkjTdNe5',
-    title: 'Star Wars Disney Plus GIF by Nerdist.com',
-    rating: 'pg-13',
-    mp4: 'https://media4.giphy.com/media/cqaiJYG5cbLkjTdNe5/giphy.mp4?cid=16254b25b1f15ec9460cba7bb50740b3e188fbcd270c0c0b&rid=giphy.mp4&ct=g',
-    width: '480',
-    height: '198',
-  },
-  {
     id: 's3SYj6zfj3QldFkici',
     url: 'https://giphy.com/gifs/disneyplus-the-mandalorian-mando-themandalorian-s3SYj6zfj3QldFkici',
     title: 'The Child Love GIF by Disney+',
@@ -234,15 +207,6 @@ const gifs = [
     height: '270',
   },
   {
-    id: 'ghIepPfqmIGYyq6kZC',
-    url: 'https://giphy.com/gifs/nerdist-star-wars-mandalorian-the-ghIepPfqmIGYyq6kZC',
-    title: 'Star Wars Disney GIF by Nerdist.com',
-    rating: 'g',
-    mp4: 'https://media4.giphy.com/media/ghIepPfqmIGYyq6kZC/giphy.mp4?cid=16254b252e3a0fc7b9780115f6a3b607f95eaa1dd58129fc&rid=giphy.mp4&ct=g',
-    width: '480',
-    height: '196',
-  },
-  {
     id: 'ghxdiwc01ppBwS4vF3',
     url: 'https://giphy.com/gifs/disneyplus-the-mandalorian-mando-themandalorian-ghxdiwc01ppBwS4vF3',
     title: 'Gina Carano Smile GIF by Disney+',
@@ -295,16 +259,7 @@ const gifs = [
     mp4: 'https://media4.giphy.com/media/FjtfibhQ62zhGrXchT/giphy.mp4?cid=16254b2596de183715d94d1119827490a0884178c79d9934&rid=giphy.mp4&ct=g',
     width: '480',
     height: '480',
-  },
-  {
-    id: '9aZdJFjQ8on0G8opyN',
-    url: 'https://giphy.com/gifs/nerdist-star-wars-the-mandalorian-disney-plus-9aZdJFjQ8on0G8opyN',
-    title: 'Star Wars Disney Plus GIF by Nerdist.com',
-    rating: 'g',
-    mp4: 'https://media0.giphy.com/media/9aZdJFjQ8on0G8opyN/giphy.mp4?cid=16254b25de5b408e4c3f88f0261d3be7b5781fece116f95a&rid=giphy.mp4&ct=g',
-    width: '480',
-    height: '198',
-  },
+  }
 ]
 
 export default gifs

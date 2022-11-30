@@ -42,11 +42,9 @@ class GIFCache {
 const cache = new GIFCache(gifs)
 async function getRandomGIF(apiKey, tag, rating) {
   if (!apiKey) {
-    log.app('GIPHY API key not set. Serving random cached response.')
     return cache.getRandom()
   }
   if (apiKey === 'testing') {
-    log.app('GIPHY API testing key used. Serving random cached response.')
     return cache.getRandom()
   }
   try {

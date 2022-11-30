@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: mandalorian-gifs
-          image: dopplerhq/mandalorian-gifs-node
+          image: doppleruniversity/mandalorian-gifs-node
           imagePullPolicy: IfNotPresent
           envFrom:
             - secretRef:
