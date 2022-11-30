@@ -6,7 +6,7 @@
   "build": {
     "dockerfile": "../Dockerfile"
   },
-  // "image": "dopplerhq/mandalorian-gifs-node",
+  // "image": "doppleruniversity/mandalorian-gifs-node",
 
   // Required for installing dev packages. Avoid if possible.
   // "containerUser": "root",

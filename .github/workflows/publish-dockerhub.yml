@@ -1,10 +1,13 @@
-name: Publish to DockerHub
+name: Build and push to Docker Hub
 on: [workflow_dispatch]
 
 jobs:
   main:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v1
 
@@ -21,8 +24,10 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@v2
         with:
+          context: ./
+          file: ./Dockerfile
           push: true
-          tags: dopplerhq/mandalorian-gifs-node:latest
+          tags: doppleruniversity/mandalorian-gifs-node:latest
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
